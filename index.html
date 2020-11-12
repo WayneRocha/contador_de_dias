@@ -19,12 +19,12 @@
                 <h2>Escolha uma data para o começo e para o fim da contagem</h2>
                 <div id="calendarios">
                     <label for="calendario__inicio">
-                        <input type="date" name="data" id="calendario__inicio"><br>
+                        <input type="date" name="data" id="calendario__inicio" onblur="Pegardatas();"><br>
                         <p>Data inicial</p>
                     </label>
                     <p id="ate">até</p>
                     <label for="calendario__dim">
-                        <input type="date" name="data" id="calendario__fim"><br>
+                        <input type="date" name="data" id="calendario__fim" onblur="Pegardatas();"><br>
                         <p>Data final</p> 
                     </label>
                     <input type="text" id="dias" readonly placeholder="Dias">
