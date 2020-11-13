@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
 }
 #bg {
     display: flex;
@@ -36,7 +37,7 @@ body {
 }
 main {
     position: relative;
-    top: 40%;
+    top: 30%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -45,7 +46,8 @@ main h2 {
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 10vh;
-    font-size: 2em;
+    font-size: 2rem;
+    white-space: pre-line;
 }
 #calendarios {
     display: flex;
@@ -102,4 +104,79 @@ footer img {
 }
 footer img:hover {
     transform: scale(1.1);
+}
+@media(max-width:800px) {
+    #elements {
+        height: 80vh;
+        background-image: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0) 0%,
+    rgb(255, 255, 255) 30%);
+    }
+    #foto__bg h1 {
+        font-size: 4em;
+        margin-top: 7vh;
+    }
+    input[type=date] {
+        width: 20vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    #ate {
+        margin-right: 5vw;
+    }
+}
+@media (max-width:599px) {
+    body {
+        height: 120vh;
+    }
+    #foto__bg h1 {
+        margin-top: 5vh;
+        width: 100vw;
+        font-size: 4em;
+    }
+    main {
+        position: relative;
+        top: 30%;
+    }
+    main h2 {
+        margin-bottom: 5vh;
+        font-size: 1.5em;
+    }
+    #calendarios {
+        flex-direction: column;
+        height: 30vh;
+        align-items: center;
+    }
+    input[type=date] {
+        height: 30%;
+        width: 40vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    input[type=text] {
+        text-align: center;
+        width: 42vw;
+        height: 130%;
+        margin-top: 5vh;
+    }
+    #ate {
+        width: 100vw;
+        text-align: center;
+    }
+    footer {
+        position: absolute;
+        bottom: -23vh;
+        z-index: 2;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
+    #foto__bg img {
+        width: 140vw;
+        left: -20vw;
+    }
+    footer img {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }
