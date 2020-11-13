@@ -10,7 +10,7 @@ function Pegardatas() {
 }
 function calculardias(di, df) {
     let d = 0;
-    //???
+    d = Math.abs((di - df) / 86400000);
     return d;
 }
 function mostrardata(d) {
