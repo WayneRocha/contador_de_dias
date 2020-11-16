@@ -6,7 +6,6 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    width: 100vw;
 }
 #bg {
     display: flex;
@@ -43,6 +42,7 @@ main {
     flex-direction: column;
 }
 main h2 {
+    text-align: center;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 10vh;
@@ -127,7 +127,7 @@ footer img:hover {
 }
 @media (max-width:599px) {
     body {
-        height: 120vh;
+        height: 130vh;
     }
     #foto__bg h1 {
         margin-top: 5vh;
@@ -144,6 +144,7 @@ footer img:hover {
     }
     #calendarios {
         flex-direction: column;
+        width: 100vw;
         height: 30vh;
         align-items: center;
     }
@@ -165,15 +166,21 @@ footer img:hover {
     }
     footer {
         position: absolute;
-        bottom: -23vh;
+        bottom: -30vh;
         z-index: 2;
     }
     footer p {
         font-size: 0.8em;
     }
+    #foto__bg {
+        height: 50vh;
+        background-image: url(../img/calendario_mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     #foto__bg img {
-        width: 140vw;
-        left: -20vw;
+        display: none;
     }
     footer img {
         margin-left: 2vw;
